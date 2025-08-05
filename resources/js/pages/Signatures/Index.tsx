@@ -40,13 +40,20 @@ export default function Index() {
                     {signatures.length > 0 ? (
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                             {signatures.map((signature) => (
-                                <div key={signature.id} className="bg-white rounded-lg shadow-md overflow-hidden group">
-                                    <div className="p-4 border-b">
+                                <div key={signature.id} className="bg-transparent rounded-lg shadow-md overflow-hidden group">
+                                    <div className="relative p-4 border-b">
                                         <img
                                             src={signature.url}
                                             alt={`Podpis ${signature.id}`}
-                                            className="w-full h-32 object-contain"
+                                            className="relative z-10 w-full h-32 object-contain"
                                         />
+                                        <div className="absolute top-4 left-4 right-4 z-0">
+                                            <div>Text behind Text behind <br /></div>
+                                            <div>Text behind Text behind <br /></div>
+                                            <div>Text behind Text behind <br /></div>
+                                            <div>Text behind Text behind <br /></div>
+                                            <div>Text behind Text behind <br /></div>
+                                        </div>
                                     </div>
                                     <div className="p-4 bg-gray-50">
                                         <p className="text-sm text-gray-500 mb-2">Added: {signature.created_at}</p>

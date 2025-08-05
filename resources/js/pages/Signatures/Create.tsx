@@ -47,7 +47,7 @@ export default function Create() {
         <>
             <Head title="New Signature" />
             <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-                <div className="w-full max-w-2xl bg-white rounded-lg shadow-xl p-6">
+                <div className="w-full max-w-2xl bg-gray-100 rounded-lg shadow-xl p-6">
                     <h1 className="text-2xl font-bold text-center mb-4">Create Your Signature</h1>
                     <div className="border-2 border-dashed rounded-md bg-gray-50">
                         <SignatureCanvas
