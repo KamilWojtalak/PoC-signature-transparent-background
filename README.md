@@ -7,3 +7,10 @@ sail artisan migrate:fresh --seed
 ```
 
 Transparency was in the canvas turn on by default. I had to simply remove the background color behind the image
+
+PDFs
+```
+sail composer require barryvdh/laravel-dompdf
+```
+
+PDF images work only with publicy shared images

@@ -19,6 +19,18 @@ export default function Welcome() {
                         >
                             Signatures
                         </Link>
+                        <Link
+                            href={route('pdf.index')}
+                            className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                        >
+                            PDF
+                        </Link>
+                        <Link
+                            href={route('pdf.test')}
+                            className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                        >
+                            PDF TEST
+                        </Link>
                     </nav>
                 </header>
                 <div className="hidden h-14.5 lg:block"></div>
